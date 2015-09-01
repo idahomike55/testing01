@@ -11,7 +11,15 @@ int main()
 	printf("Enter the temperature in F");
 	scanf_s("%d",&tempf);
 	tempc = (tempf - 32) * 5 / 9;
-	printf("The temp is %f C",tempc);
+	if (tempc > 100)
+	{
+		printf("Wow, %f thats boiling!", tempc);
+	}
+	else
+	{
+		printf("The temp is %f C", tempc);
+	}
+	
 	return 0;
 }
 
