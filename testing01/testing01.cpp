@@ -6,7 +6,10 @@
 
 int main()
 {
-	printf("hello world");
+	int x;
+	printf("Enter a number");
+	scanf_s("%d",&x);
+	printf("You entered %d",x);
 	return 0;
 }
 
