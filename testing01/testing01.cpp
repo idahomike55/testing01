@@ -6,10 +6,12 @@
 
 int main()
 {
-	int x;
-	printf("Enter a number");
-	scanf_s("%d",&x);
-	printf("You entered %d",x);
+	int tempf;
+	float tempc;
+	printf("Enter the temperature in F");
+	scanf_s("%d",&tempf);
+	tempc = (tempf - 32) * 5 / 9;
+	printf("The temp is %f C",tempc);
 	return 0;
 }
 
